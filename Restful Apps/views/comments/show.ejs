@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Comments id : <%= obj.id %></h1>
+    <%= obj.comment %> - <b><%=obj.username %></b>
+    <br />
+    <br />
+    <a href="/comments"> back to Index </a>
+    <br />
+    <br />
+    <a href="/comments/<%=obj.id %>/edit">Edit</a>
+    <br />
+    <br />
+    <form method="post" action="/comments/<%= obj.id %>?_method=DELETE">
+      <button>Delete</button>
+    </form>
+  </body>
+</html>

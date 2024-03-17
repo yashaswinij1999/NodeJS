@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form action="/comments" method="post">
+      <div>
+        <label for="username"> Enter UserName : </label>
+        <br />
+        <input
+          type="text"
+          placeholder="username"
+          name="username"
+          id="username"
+        />
+
+        <div>
+          <br />
+          <label for="comment"> Enter Comment</label><br />
+
+          <textarea
+            name="comment"
+            id="comment"
+            cols="30"
+            rows="5"
+            placeholder="comment"
+          ></textarea>
+        </div>
+      </div>
+      <button>Submit</button>
+    </form>
+    <br />
+    <a href="/comments">Back</a>
+  </body>
+</html>
