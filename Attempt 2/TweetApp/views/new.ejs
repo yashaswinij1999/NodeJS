@@ -7,11 +7,11 @@
   </head>
   <body>
     <h1>Form</h1>
-    <form action="http://localhost:3000/comments" method="post">
-      Enter name : <input type="text" name="username" id="username" />
+    <form action="/comments/new" method="post">
+      Enter username: <input type="text" name="username" id="username" />
       <div>Enter Comment :</div>
       <div>
-        <textarea name="comment" id="comment" cols="32" rows="5"></textarea>
+        <textarea rows="5" cols="34" name="comment"></textarea>
       </div>
       <button type="submit">Submit</button>
     </form>

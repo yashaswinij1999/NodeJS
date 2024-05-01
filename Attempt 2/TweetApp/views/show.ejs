@@ -6,12 +6,8 @@
     <title>Document</title>
   </head>
   <body>
-    <h1>Comments</h1>
-    <% for(let comment of comments) { %>
-    <p>
-      <%= comment.comment %>- <b><%= comment.username %></b>
-      <a href="/comments/show/<%= comment.id %>"> view </a>
-    </p>
-    <%}%>
+    <h1>Id :<%= id %></h1>
+    <p>Comment : <%= comment %></p>
+    <p>Username :<%= username %></p>
   </body>
 </html>
